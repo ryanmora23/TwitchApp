@@ -1,0 +1,644 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'method-override',
+1 verbose cli   'request',
+1 verbose cli   'lodash',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json TwitchApp@1.0.0 No description
+5 warn package.json TwitchApp@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'express', null ]
+8 verbose cache add name=undefined spec="express" args=["express",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'express',
+9 verbose parsed url   path: 'express',
+9 verbose parsed url   href: 'express' }
+10 verbose cache add [ 'method-override', null ]
+11 verbose cache add name=undefined spec="method-override" args=["method-override",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'method-override',
+12 verbose parsed url   path: 'method-override',
+12 verbose parsed url   href: 'method-override' }
+13 verbose cache add [ 'request', null ]
+14 verbose cache add name=undefined spec="request" args=["request",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'request',
+15 verbose parsed url   path: 'request',
+15 verbose parsed url   href: 'request' }
+16 verbose cache add [ 'lodash', null ]
+17 verbose cache add name=undefined spec="lodash" args=["lodash",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'lodash',
+18 verbose parsed url   path: 'lodash',
+18 verbose parsed url   href: 'lodash' }
+19 silly lockFile f3c62de4-express express
+20 verbose lock express /Users/juliolson/.npm/f3c62de4-express.lock
+21 silly lockFile 0b00fa9d-method-override method-override
+22 verbose lock method-override /Users/juliolson/.npm/0b00fa9d-method-override.lock
+23 silly lockFile 088e29b0-request request
+24 verbose lock request /Users/juliolson/.npm/088e29b0-request.lock
+25 silly lockFile 901466a5-lodash lodash
+26 verbose lock lodash /Users/juliolson/.npm/901466a5-lodash.lock
+27 silly lockFile f3c62de4-express express
+28 silly lockFile f3c62de4-express express
+29 silly lockFile 0b00fa9d-method-override method-override
+30 silly lockFile 0b00fa9d-method-override method-override
+31 silly lockFile 088e29b0-request request
+32 silly lockFile 088e29b0-request request
+33 silly lockFile 901466a5-lodash lodash
+34 silly lockFile 901466a5-lodash lodash
+35 verbose addNamed [ 'express', '' ]
+36 verbose addNamed [ null, '*' ]
+37 silly lockFile 64a534c1-express express@
+38 verbose lock express@ /Users/juliolson/.npm/64a534c1-express.lock
+39 verbose addNamed [ 'method-override', '' ]
+40 verbose addNamed [ null, '*' ]
+41 silly lockFile dd70539b-method-override method-override@
+42 verbose lock method-override@ /Users/juliolson/.npm/dd70539b-method-override.lock
+43 verbose addNamed [ 'request', '' ]
+44 verbose addNamed [ null, '*' ]
+45 silly lockFile 9d461bcf-request request@
+46 verbose lock request@ /Users/juliolson/.npm/9d461bcf-request.lock
+47 verbose addNamed [ 'lodash', '' ]
+48 verbose addNamed [ null, '*' ]
+49 silly lockFile f856e425-lodash lodash@
+50 verbose lock lodash@ /Users/juliolson/.npm/f856e425-lodash.lock
+51 silly addNameRange { name: 'express', range: '*', hasData: false }
+52 silly addNameRange { name: 'method-override', range: '*', hasData: false }
+53 silly addNameRange { name: 'request', range: '*', hasData: false }
+54 silly addNameRange { name: 'lodash', range: '*', hasData: false }
+55 verbose request where is /lodash
+56 verbose request registry https://registry.npmjs.org/
+57 verbose request id 89f2ee95dae64b5b
+58 verbose url raw /lodash
+59 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+60 verbose url resolved https://registry.npmjs.org/lodash
+61 verbose request where is https://registry.npmjs.org/lodash
+62 info trying registry request attempt 1 at 10:16:40
+63 verbose etag "4EOPMN11R6YCW2PI7I0EJ9BPY"
+64 http GET https://registry.npmjs.org/lodash
+65 verbose request where is /request
+66 verbose request registry https://registry.npmjs.org/
+67 verbose url raw /request
+68 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+69 verbose url resolved https://registry.npmjs.org/request
+70 verbose request where is https://registry.npmjs.org/request
+71 info trying registry request attempt 1 at 10:16:40
+72 verbose etag "6PRB8WWRKVAAWXZ668X6WVE6A"
+73 http GET https://registry.npmjs.org/request
+74 verbose request where is /method-override
+75 verbose request registry https://registry.npmjs.org/
+76 verbose url raw /method-override
+77 verbose url resolving [ 'https://registry.npmjs.org/', './method-override' ]
+78 verbose url resolved https://registry.npmjs.org/method-override
+79 verbose request where is https://registry.npmjs.org/method-override
+80 info trying registry request attempt 1 at 10:16:40
+81 verbose etag "ARSLRG3HPV6L40NZ27OSUG5GE"
+82 http GET https://registry.npmjs.org/method-override
+83 verbose request where is /express
+84 verbose request registry https://registry.npmjs.org/
+85 verbose url raw /express
+86 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+87 verbose url resolved https://registry.npmjs.org/express
+88 verbose request where is https://registry.npmjs.org/express
+89 info trying registry request attempt 1 at 10:16:40
+90 verbose etag "6MM703BQL6N2WDVZTMELR7ODD"
+91 http GET https://registry.npmjs.org/express
+92 http 304 https://registry.npmjs.org/lodash
+93 silly registry.get cb [ 304,
+93 silly registry.get   { date: 'Tue, 25 Nov 2014 16:16:40 GMT',
+93 silly registry.get     server: 'Apache',
+93 silly registry.get     via: '1.1 varnish',
+93 silly registry.get     'last-modified': 'Tue, 25 Nov 2014 16:15:57 GMT',
+93 silly registry.get     'cache-control': 'max-age=60',
+93 silly registry.get     etag: '"4EOPMN11R6YCW2PI7I0EJ9BPY"',
+93 silly registry.get     age: '59',
+93 silly registry.get     'x-served-by': 'cache-dfw1824-DFW',
+93 silly registry.get     'x-cache': 'HIT',
+93 silly registry.get     'x-cache-hits': '3',
+93 silly registry.get     'x-timer': 'S1416932200.635207,VS0,VE0',
+93 silly registry.get     vary: 'Accept',
+93 silly registry.get     'content-length': '0',
+93 silly registry.get     'keep-alive': 'timeout=10, max=50',
+93 silly registry.get     connection: 'Keep-Alive' } ]
+94 verbose etag https://registry.npmjs.org/lodash from cache
+95 silly addNameRange number 2 { name: 'lodash', range: '*', hasData: true }
+96 silly addNameRange versions [ 'lodash',
+96 silly addNameRange   [ '0.1.0',
+96 silly addNameRange     '0.2.0',
+96 silly addNameRange     '0.2.1',
+96 silly addNameRange     '0.2.2',
+96 silly addNameRange     '0.3.0',
+96 silly addNameRange     '0.3.1',
+96 silly addNameRange     '0.3.2',
+96 silly addNameRange     '0.4.0',
+96 silly addNameRange     '0.4.1',
+96 silly addNameRange     '0.4.2',
+96 silly addNameRange     '0.5.0-rc.1',
+96 silly addNameRange     '0.5.0',
+96 silly addNameRange     '0.5.1',
+96 silly addNameRange     '0.5.2',
+96 silly addNameRange     '0.6.0',
+96 silly addNameRange     '0.6.1',
+96 silly addNameRange     '0.7.0',
+96 silly addNameRange     '0.8.0',
+96 silly addNameRange     '0.8.1',
+96 silly addNameRange     '0.8.2',
+96 silly addNameRange     '0.9.0',
+96 silly addNameRange     '0.9.1',
+96 silly addNameRange     '0.9.2',
+96 silly addNameRange     '0.10.0',
+96 silly addNameRange     '1.0.0-rc.1',
+96 silly addNameRange     '1.0.0-rc.2',
+96 silly addNameRange     '1.0.0-rc.3',
+96 silly addNameRange     '1.0.0',
+96 silly addNameRange     '1.0.1',
+96 silly addNameRange     '1.1.0',
+96 silly addNameRange     '1.1.1',
+96 silly addNameRange     '1.2.0',
+96 silly addNameRange     '1.2.1',
+96 silly addNameRange     '1.3.0',
+96 silly addNameRange     '1.3.1',
+96 silly addNameRange     '2.0.0',
+96 silly addNameRange     '2.1.0',
+96 silly addNameRange     '2.2.0',
+96 silly addNameRange     '2.2.1',
+96 silly addNameRange     '2.3.0',
+96 silly addNameRange     '2.4.0',
+96 silly addNameRange     '2.4.1' ] ]
+97 verbose addNamed [ 'lodash', '2.4.1' ]
+98 verbose addNamed [ '2.4.1', '2.4.1' ]
+99 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+100 verbose lock lodash@2.4.1 /Users/juliolson/.npm/8502be2a-lodash-2-4-1.lock
+101 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+102 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+103 silly lockFile f856e425-lodash lodash@
+104 silly lockFile f856e425-lodash lodash@
+105 http 304 https://registry.npmjs.org/method-override
+106 silly registry.get cb [ 304,
+106 silly registry.get   { date: 'Tue, 25 Nov 2014 16:16:40 GMT',
+106 silly registry.get     server: 'Apache',
+106 silly registry.get     via: '1.1 varnish',
+106 silly registry.get     'last-modified': 'Tue, 25 Nov 2014 16:16:40 GMT',
+106 silly registry.get     'cache-control': 'max-age=60',
+106 silly registry.get     etag: '"ARSLRG3HPV6L40NZ27OSUG5GE"',
+106 silly registry.get     age: '34',
+106 silly registry.get     'x-served-by': 'cache-dfw1824-DFW',
+106 silly registry.get     'x-cache': 'HIT',
+106 silly registry.get     'x-cache-hits': '1',
+106 silly registry.get     'x-timer': 'S1416932200.695158,VS0,VE0',
+106 silly registry.get     vary: 'Accept',
+106 silly registry.get     'content-length': '0',
+106 silly registry.get     'keep-alive': 'timeout=10, max=50',
+106 silly registry.get     connection: 'Keep-Alive' } ]
+107 verbose etag https://registry.npmjs.org/method-override from cache
+108 silly addNameRange number 2 { name: 'method-override', range: '*', hasData: true }
+109 silly addNameRange versions [ 'method-override',
+109 silly addNameRange   [ '1.0.0',
+109 silly addNameRange     '1.0.1',
+109 silly addNameRange     '1.0.2',
+109 silly addNameRange     '2.0.0',
+109 silly addNameRange     '2.0.1',
+109 silly addNameRange     '2.0.2',
+109 silly addNameRange     '2.1.0',
+109 silly addNameRange     '2.1.1',
+109 silly addNameRange     '2.1.2',
+109 silly addNameRange     '2.1.3',
+109 silly addNameRange     '2.2.0',
+109 silly addNameRange     '2.3.0' ] ]
+110 verbose addNamed [ 'method-override', '2.3.0' ]
+111 verbose addNamed [ '2.3.0', '2.3.0' ]
+112 silly lockFile d0db1aff-method-override-2-3-0 method-override@2.3.0
+113 verbose lock method-override@2.3.0 /Users/juliolson/.npm/d0db1aff-method-override-2-3-0.lock
+114 silly lockFile d0db1aff-method-override-2-3-0 method-override@2.3.0
+115 silly lockFile d0db1aff-method-override-2-3-0 method-override@2.3.0
+116 silly lockFile dd70539b-method-override method-override@
+117 silly lockFile dd70539b-method-override method-override@
+118 http 200 https://registry.npmjs.org/express
+119 silly registry.get cb [ 200,
+119 silly registry.get   { date: 'Tue, 25 Nov 2014 16:16:40 GMT',
+119 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+119 silly registry.get     etag: '"DJCYC4130H81RV6POOWE3UBMD"',
+119 silly registry.get     'content-type': 'application/json',
+119 silly registry.get     'cache-control': 'max-age=60',
+119 silly registry.get     'content-length': '431216',
+119 silly registry.get     'accept-ranges': 'bytes',
+119 silly registry.get     via: '1.1 varnish',
+119 silly registry.get     age: '8',
+119 silly registry.get     'x-served-by': 'cache-dfw1834-DFW',
+119 silly registry.get     'x-cache': 'HIT',
+119 silly registry.get     'x-cache-hits': '1',
+119 silly registry.get     'x-timer': 'S1416932200.717698,VS0,VE1',
+119 silly registry.get     vary: 'Accept',
+119 silly registry.get     'keep-alive': 'timeout=10, max=50',
+119 silly registry.get     connection: 'Keep-Alive' } ]
+120 silly addNameRange number 2 { name: 'express', range: '*', hasData: true }
+121 silly addNameRange versions [ 'express',
+121 silly addNameRange   [ '0.14.0',
+121 silly addNameRange     '0.14.1',
+121 silly addNameRange     '1.0.0',
+121 silly addNameRange     '1.0.1',
+121 silly addNameRange     '1.0.2',
+121 silly addNameRange     '1.0.3',
+121 silly addNameRange     '1.0.4',
+121 silly addNameRange     '1.0.5',
+121 silly addNameRange     '1.0.6',
+121 silly addNameRange     '1.0.7',
+121 silly addNameRange     '1.0.8',
+121 silly addNameRange     '2.0.0',
+121 silly addNameRange     '2.1.0',
+121 silly addNameRange     '2.1.1',
+121 silly addNameRange     '2.2.0',
+121 silly addNameRange     '2.2.1',
+121 silly addNameRange     '2.2.2',
+121 silly addNameRange     '2.3.0',
+121 silly addNameRange     '2.3.1',
+121 silly addNameRange     '2.3.2',
+121 silly addNameRange     '2.3.3',
+121 silly addNameRange     '2.3.4',
+121 silly addNameRange     '2.3.5',
+121 silly addNameRange     '2.3.6',
+121 silly addNameRange     '2.3.7',
+121 silly addNameRange     '2.3.8',
+121 silly addNameRange     '2.3.9',
+121 silly addNameRange     '2.3.10',
+121 silly addNameRange     '2.3.11',
+121 silly addNameRange     '2.3.12',
+121 silly addNameRange     '2.4.0',
+121 silly addNameRange     '2.4.1',
+121 silly addNameRange     '2.4.2',
+121 silly addNameRange     '2.4.3',
+121 silly addNameRange     '2.4.4',
+121 silly addNameRange     '2.4.5',
+121 silly addNameRange     '2.4.6',
+121 silly addNameRange     '2.4.7',
+121 silly addNameRange     '2.5.0',
+121 silly addNameRange     '2.5.1',
+121 silly addNameRange     '2.5.2',
+121 silly addNameRange     '2.5.3',
+121 silly addNameRange     '2.5.4',
+121 silly addNameRange     '2.5.5',
+121 silly addNameRange     '2.5.6',
+121 silly addNameRange     '2.5.7',
+121 silly addNameRange     '2.5.8',
+121 silly addNameRange     '2.5.9',
+121 silly addNameRange     '2.5.10',
+121 silly addNameRange     '2.5.11',
+121 silly addNameRange     '3.0.0',
+121 silly addNameRange     '3.0.1',
+121 silly addNameRange     '3.0.2',
+121 silly addNameRange     '3.0.3',
+121 silly addNameRange     '3.0.4',
+121 silly addNameRange     '3.0.5',
+121 silly addNameRange     '3.0.6',
+121 silly addNameRange     '3.1.0',
+121 silly addNameRange     '3.1.1',
+121 silly addNameRange     '3.1.2',
+121 silly addNameRange     '3.2.0',
+121 silly addNameRange     '3.2.1',
+121 silly addNameRange     '3.2.2',
+121 silly addNameRange     '3.2.3',
+121 silly addNameRange     '3.2.4',
+121 silly addNameRange     '3.2.5',
+121 silly addNameRange     '3.2.6',
+121 silly addNameRange     '3.3.0',
+121 silly addNameRange     '3.3.1',
+121 silly addNameRange     '3.3.2',
+121 silly addNameRange     '3.3.3',
+121 silly addNameRange     '3.3.4',
+121 silly addNameRange     '3.3.5',
+121 silly addNameRange     '3.3.6',
+121 silly addNameRange     '1.0.0-beta',
+121 silly addNameRange     '1.0.0-beta2',
+121 silly addNameRange     '1.0.0-rc',
+121 silly addNameRange     '1.0.0-rc2',
+121 silly addNameRange     '1.0.0-rc3',
+121 silly addNameRange     '1.0.0-rc4',
+121 silly addNameRange     '2.0.0-beta',
+121 silly addNameRange     '2.0.0-beta2',
+121 silly addNameRange     '2.0.0-beta3',
+121 silly addNameRange     '2.0.0-rc',
+121 silly addNameRange     '2.0.0-rc2',
+121 silly addNameRange     '2.0.0-rc3',
+121 silly addNameRange     '3.0.0-alpha1',
+121 silly addNameRange     '3.0.0-alpha2',
+121 silly addNameRange     '3.0.0-alpha3',
+121 silly addNameRange     '3.0.0-alpha4',
+121 silly addNameRange     '3.0.0-alpha5',
+121 silly addNameRange     '3.0.0-beta1',
+121 silly addNameRange     '3.0.0-beta2',
+121 silly addNameRange     '3.0.0-beta3',
+121 silly addNameRange     '3.0.0-beta4',
+121 silly addNameRange     '3.0.0-beta6',
+121 silly addNameRange     '3.0.0-beta7',
+121 silly addNameRange     '3.0.0-rc1',
+121 silly addNameRange     '3.0.0-rc2',
+121 silly addNameRange     '3.0.0-rc3',
+121 silly addNameRange     '3.0.0-rc4',
+121 silly addNameRange     '3.0.0-rc5',
+121 silly addNameRange     '3.3.7',
+121 silly addNameRange     '3.3.8',
+121 silly addNameRange     '3.4.0',
+121 silly addNameRange     '3.4.1',
+121 silly addNameRange     '3.4.2',
+121 silly addNameRange     '3.4.3',
+121 silly addNameRange     '3.4.4',
+121 silly addNameRange     '3.4.5',
+121 silly addNameRange     '3.4.6',
+121 silly addNameRange     '3.4.7',
+121 silly addNameRange     '3.4.8',
+121 silly addNameRange     '4.0.0-rc1',
+121 silly addNameRange     '4.0.0-rc2',
+121 silly addNameRange     '3.5.0',
+121 silly addNameRange     '4.0.0-rc3',
+121 silly addNameRange     '4.0.0-rc4',
+121 silly addNameRange     '3.5.1',
+121 silly addNameRange     '4.0.0',
+121 silly addNameRange     '3.5.2',
+121 silly addNameRange     '4.1.0',
+121 silly addNameRange     '4.1.1',
+121 silly addNameRange     '3.5.3',
+121 silly addNameRange     '4.1.2',
+121 silly addNameRange     '3.6.0',
+121 silly addNameRange     '4.2.0',
+121 silly addNameRange     '3.7.0',
+121 silly addNameRange     '3.8.0',
+121 silly addNameRange     '4.3.0',
+121 silly addNameRange     '4.3.1',
+121 silly addNameRange     '3.8.1',
+121 silly addNameRange     '4.3.2',
+121 silly addNameRange     '3.9.0',
+121 silly addNameRange     '4.4.0',
+121 silly addNameRange     '4.4.1',
+121 silly addNameRange     '3.10.0',
+121 silly addNameRange     '3.10.1',
+121 silly addNameRange     '3.10.2',
+121 silly addNameRange     '3.10.3',
+121 silly addNameRange     '3.10.4',
+121 silly addNameRange     '4.4.2',
+121 silly addNameRange     '3.10.5',
+121 silly addNameRange     '4.4.3',
+121 silly addNameRange     '3.11.0',
+121 silly addNameRange     '4.4.4',
+121 silly addNameRange     '3.12.0',
+121 silly addNameRange     '3.12.1',
+121 silly addNameRange     '4.4.5',
+121 silly addNameRange     '3.13.0',
+121 silly addNameRange     '4.5.0',
+121 silly addNameRange     '4.5.1',
+121 silly addNameRange     '3.14.0',
+121 silly addNameRange     '4.6.0',
+121 silly addNameRange     '4.6.1',
+121 silly addNameRange     '3.15.0',
+121 silly addNameRange     '4.7.0',
+121 silly addNameRange     '3.15.1',
+121 silly addNameRange     '4.7.1',
+121 silly addNameRange     '3.15.2',
+121 silly addNameRange     '4.7.2',
+121 silly addNameRange     '4.7.3',
+121 silly addNameRange     '3.15.3',
+121 silly addNameRange     '4.7.4',
+121 silly addNameRange     '3.16.0',
+121 silly addNameRange     '4.8.0',
+121 silly addNameRange     '3.16.1',
+121 silly addNameRange     '4.8.1',
+121 silly addNameRange     '3.16.2',
+121 silly addNameRange     '4.8.2',
+121 silly addNameRange     '3.16.3',
+121 silly addNameRange     '3.16.4',
+121 silly addNameRange     '4.8.3',
+121 silly addNameRange     '3.16.5',
+121 silly addNameRange     '3.16.6',
+121 silly addNameRange     '4.8.4',
+121 silly addNameRange     '3.16.7',
+121 silly addNameRange     '4.8.5',
+121 silly addNameRange     '3.16.8',
+121 silly addNameRange     '4.8.6',
+121 silly addNameRange     '3.16.9',
+121 silly addNameRange     '4.8.7',
+121 silly addNameRange     '3.16.10',
+121 silly addNameRange     '4.8.8',
+121 silly addNameRange     '3.17.0',
+121 silly addNameRange     '3.17.1',
+121 silly addNameRange     '4.9.0',
+121 silly addNameRange     '3.17.2',
+121 silly addNameRange     '4.9.1',
+121 silly addNameRange     '4.9.2',
+121 silly addNameRange     '3.17.3',
+121 silly addNameRange     '4.9.3',
+121 silly addNameRange     '3.17.4',
+121 silly addNameRange     '4.9.4',
+121 silly addNameRange     '3.17.5',
+121 silly addNameRange     '4.9.5',
+121 silly addNameRange     '3.17.6',
+121 silly addNameRange     '3.17.7',
+121 silly addNameRange     '4.9.6',
+121 silly addNameRange     '4.9.7',
+121 silly addNameRange     '3.17.8',
+121 silly addNameRange     '4.9.8',
+121 silly addNameRange     '3.18.0',
+121 silly addNameRange     '3.18.1',
+121 silly addNameRange     '4.10.0',
+121 silly addNameRange     '3.18.2',
+121 silly addNameRange     '4.10.1',
+121 silly addNameRange     '5.0.0-alpha.1',
+121 silly addNameRange     '3.18.3',
+121 silly addNameRange     '4.10.2',
+121 silly addNameRange     '3.18.4',
+121 silly addNameRange     '4.10.3',
+121 silly addNameRange     '4.10.4' ] ]
+122 verbose addNamed [ 'express', '4.10.4' ]
+123 verbose addNamed [ '4.10.4', '4.10.4' ]
+124 silly lockFile c05f2c08-express-4-10-4 express@4.10.4
+125 verbose lock express@4.10.4 /Users/juliolson/.npm/c05f2c08-express-4-10-4.lock
+126 http 200 https://registry.npmjs.org/request
+127 silly registry.get cb [ 200,
+127 silly registry.get   { date: 'Tue, 25 Nov 2014 16:16:40 GMT',
+127 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+127 silly registry.get     etag: '"9578KK4M42WQQ6MEX0BXEJVP0"',
+127 silly registry.get     'content-type': 'application/json',
+127 silly registry.get     'cache-control': 'max-age=60',
+127 silly registry.get     'content-length': '126725',
+127 silly registry.get     'accept-ranges': 'bytes',
+127 silly registry.get     via: '1.1 varnish',
+127 silly registry.get     age: '0',
+127 silly registry.get     'x-served-by': 'cache-dfw1826-DFW',
+127 silly registry.get     'x-cache': 'HIT',
+127 silly registry.get     'x-cache-hits': '1',
+127 silly registry.get     'x-timer': 'S1416932200.696023,VS0,VE265',
+127 silly registry.get     vary: 'Accept',
+127 silly registry.get     'keep-alive': 'timeout=10, max=50',
+127 silly registry.get     connection: 'Keep-Alive' } ]
+128 silly lockFile 65e17ce9-s-org-express-express-4-10-4-tgz https://registry.npmjs.org/express/-/express-4.10.4.tgz
+129 verbose lock https://registry.npmjs.org/express/-/express-4.10.4.tgz /Users/juliolson/.npm/65e17ce9-s-org-express-express-4-10-4-tgz.lock
+130 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.10.4.tgz',
+130 verbose addRemoteTarball   '31aa70acdad6b6093945c30523df8537336deb58' ]
+131 silly addNameRange number 2 { name: 'request', range: '*', hasData: true }
+132 silly addNameRange versions [ 'request',
+132 silly addNameRange   [ '0.10.0',
+132 silly addNameRange     '0.8.3',
+132 silly addNameRange     '0.9.0',
+132 silly addNameRange     '0.9.1',
+132 silly addNameRange     '0.9.5',
+132 silly addNameRange     '1.0.0',
+132 silly addNameRange     '1.1.0',
+132 silly addNameRange     '1.1.1',
+132 silly addNameRange     '1.2.0',
+132 silly addNameRange     '1.9.0',
+132 silly addNameRange     '1.9.1',
+132 silly addNameRange     '1.9.2',
+132 silly addNameRange     '1.9.3',
+132 silly addNameRange     '1.9.5',
+132 silly addNameRange     '1.9.7',
+132 silly addNameRange     '1.9.8',
+132 silly addNameRange     '1.9.9',
+132 silly addNameRange     '2.0.0',
+132 silly addNameRange     '2.0.1',
+132 silly addNameRange     '2.0.2',
+132 silly addNameRange     '2.0.3',
+132 silly addNameRange     '2.0.4',
+132 silly addNameRange     '2.0.5',
+132 silly addNameRange     '2.1.0',
+132 silly addNameRange     '2.1.1',
+132 silly addNameRange     '2.2.0',
+132 silly addNameRange     '2.2.5',
+132 silly addNameRange     '2.2.6',
+132 silly addNameRange     '2.2.9',
+132 silly addNameRange     '2.9.0',
+132 silly addNameRange     '2.9.1',
+132 silly addNameRange     '2.9.2',
+132 silly addNameRange     '2.9.3',
+132 silly addNameRange     '2.9.100',
+132 silly addNameRange     '2.9.150',
+132 silly addNameRange     '2.9.151',
+132 silly addNameRange     '2.9.152',
+132 silly addNameRange     '2.9.153',
+132 silly addNameRange     '2.9.200',
+132 silly addNameRange     '2.9.201',
+132 silly addNameRange     '2.9.202',
+132 silly addNameRange     '2.9.203',
+132 silly addNameRange     '2.10.0',
+132 silly addNameRange     '2.11.0',
+132 silly addNameRange     '2.11.1',
+132 silly addNameRange     '2.11.2',
+132 silly addNameRange     '2.11.3',
+132 silly addNameRange     '2.11.4',
+132 silly addNameRange     '2.12.0',
+132 silly addNameRange     '2.14.0',
+132 silly addNameRange     '2.16.0',
+132 silly addNameRange     '2.16.2',
+132 silly addNameRange     '2.16.4',
+132 silly addNameRange     '2.16.6',
+132 silly addNameRange     '2.18.0',
+132 silly addNameRange     '2.19.0',
+132 silly addNameRange     '2.20.0',
+132 silly addNameRange     '2.21.0',
+132 silly addNameRange     '2.22.0',
+132 silly addNameRange     '2.23.0',
+132 silly addNameRange     '2.24.0',
+132 silly addNameRange     '2.25.0',
+132 silly addNameRange     '2.26.0',
+132 silly addNameRange     '2.27.0',
+132 silly addNameRange     '2.28.0',
+132 silly addNameRange     '2.29.0',
+132 silly addNameRange     '2.30.0',
+132 silly addNameRange     '2.31.0',
+132 silly addNameRange     '2.32.0',
+132 silly addNameRange     '2.33.0',
+132 silly addNameRange     '2.34.0',
+132 silly addNameRange     '2.35.0',
+132 silly addNameRange     '2.36.0',
+132 silly addNameRange     '2.37.0',
+132 silly addNameRange     '2.38.0',
+132 silly addNameRange     '2.39.0',
+132 silly addNameRange     '2.40.0',
+132 silly addNameRange     '2.41.0',
+132 silly addNameRange     '2.42.0',
+132 silly addNameRange     '2.43.0',
+132 silly addNameRange     '2.44.0',
+132 silly addNameRange     '2.45.0',
+132 silly addNameRange     '2.46.0',
+132 silly addNameRange     '2.47.0',
+132 silly addNameRange     '2.48.0' ] ]
+133 verbose addNamed [ 'request', '2.48.0' ]
+134 verbose addNamed [ '2.48.0', '2.48.0' ]
+135 silly lockFile af3f4873-request-2-48-0 request@2.48.0
+136 verbose lock request@2.48.0 /Users/juliolson/.npm/af3f4873-request-2-48-0.lock
+137 silly lockFile 7dca017d-s-org-request-request-2-48-0-tgz https://registry.npmjs.org/request/-/request-2.48.0.tgz
+138 verbose lock https://registry.npmjs.org/request/-/request-2.48.0.tgz /Users/juliolson/.npm/7dca017d-s-org-request-request-2-48-0-tgz.lock
+139 info retry fetch attempt 1 at 10:16:41
+140 verbose fetch to= /var/folders/49/fn79vrgn3p10j_k2n03kzb640000gn/T/npm-1437-ViS9Epql/registry.npmjs.org/express/-/express-4.10.4.tgz
+141 verbose addRemoteTarball [ 'https://registry.npmjs.org/request/-/request-2.48.0.tgz',
+141 verbose addRemoteTarball   '3ae2e091c9698282d58a0e6989ece2638f0f1f28' ]
+142 http GET https://registry.npmjs.org/express/-/express-4.10.4.tgz
+143 info retry fetch attempt 1 at 10:16:41
+144 verbose fetch to= /var/folders/49/fn79vrgn3p10j_k2n03kzb640000gn/T/npm-1437-ViS9Epql/registry.npmjs.org/request/-/request-2.48.0.tgz
+145 http GET https://registry.npmjs.org/request/-/request-2.48.0.tgz
+146 http 200 https://registry.npmjs.org/express/-/express-4.10.4.tgz
+147 http 200 https://registry.npmjs.org/request/-/request-2.48.0.tgz
+148 silly lockFile 7dca017d-s-org-request-request-2-48-0-tgz https://registry.npmjs.org/request/-/request-2.48.0.tgz
+149 silly lockFile 7dca017d-s-org-request-request-2-48-0-tgz https://registry.npmjs.org/request/-/request-2.48.0.tgz
+150 silly lockFile af3f4873-request-2-48-0 request@2.48.0
+151 silly lockFile af3f4873-request-2-48-0 request@2.48.0
+152 silly lockFile 9d461bcf-request request@
+153 silly lockFile 9d461bcf-request request@
+154 silly lockFile 65e17ce9-s-org-express-express-4-10-4-tgz https://registry.npmjs.org/express/-/express-4.10.4.tgz
+155 silly lockFile 65e17ce9-s-org-express-express-4-10-4-tgz https://registry.npmjs.org/express/-/express-4.10.4.tgz
+156 silly lockFile c05f2c08-express-4-10-4 express@4.10.4
+157 silly lockFile c05f2c08-express-4-10-4 express@4.10.4
+158 silly lockFile 64a534c1-express express@
+159 silly lockFile 64a534c1-express express@
+160 error Error: EACCES, mkdir '/Users/juliolson/.npm/request/2.48.0'
+160 error  { [Error: EACCES, mkdir '/Users/juliolson/.npm/request/2.48.0']
+160 error   errno: 3,
+160 error   code: 'EACCES',
+160 error   path: '/Users/juliolson/.npm/request/2.48.0',
+160 error   parent: 'TwitchApp' }
+161 error Please try running this command again as root/Administrator.
+162 error System Darwin 13.4.0
+163 error command "node" "/usr/local/bin/npm" "install" "express" "method-override" "request" "lodash" "--save"
+164 error cwd /Users/juliolson/Github Projects/TwitchApp
+165 error node -v v0.10.32
+166 error npm -v 1.4.28
+167 error path /Users/juliolson/.npm/request/2.48.0
+168 error code EACCES
+169 error errno 3
+170 error stack Error: EACCES, mkdir '/Users/juliolson/.npm/request/2.48.0'
+171 verbose exit [ 3, true ]
