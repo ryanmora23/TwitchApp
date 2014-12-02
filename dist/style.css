@@ -39,3 +39,10 @@
 body {
   -webkit-transition: opacity 0.25s ease;
           transition: opacity 0.25s ease; }
+
+.hidden {
+  display: none; }
+
+.streamPlayer {
+  height: 500px;
+  width: 100%; }

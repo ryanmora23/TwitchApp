@@ -45,4 +45,10 @@
 body {
     transition: opacity .25s ease;
 }
-    
+.hidden{
+    display:none;
+}
+.streamPlayer{
+    height:500px;
+    width:100%;
+}
