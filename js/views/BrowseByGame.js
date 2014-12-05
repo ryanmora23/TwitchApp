@@ -43,8 +43,12 @@
         },
         render: function() {
         	console.log(this.uniqueNames)
+            debugger;
         	var putOnPage = "";
             for(var i = 0; i<this.uniqueNames.length; i++){
+                if(this.uniqueNames[i]===null){
+                    continue;
+                }
             	putOnPage += "<a href=#"+this.uniqueNames[i].split(' ').join('')+">"+this.uniqueNames[i]+"</a><br>";
             }
             this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
