@@ -46,3 +46,17 @@ body {
 .streamPlayer {
   height: 500px;
   width: 100%; }
+
+li {
+  display: inline;
+  margin: 10px; }
+
+.inline {
+  display: inline;
+  margin: 10px; }
+
+.margin {
+  margin: 10px; }
+
+.hover:hover {
+  cursor: pointer; }

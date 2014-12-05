@@ -15,8 +15,23 @@
 </head>
 
 <body>
-    <h1>TwitchTV SDK</h1>
-    <div class="status">
+    <div class="navContainer">
+        <ul class="navBar">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <!--             <li>
+                <a href="#Login">Login to Twitch.tv</a>
+            </li> -->
+            <li>
+                <a href="#BrowseAll">Browse All Streams</a>
+            </li>
+            <li>
+                <a href="#BrowseLeague">Browse League Of Legend Streams</a>
+            </li>
+        </ul>
+    </div>
+    <!--     <div class="status">
         Status:
         <input readonly="readonly" size="60" val="Unknown" />
     </div>
@@ -38,12 +53,23 @@
         <div id="get-stream-key">
             <button>Get TwitchTV Stream Key</button>
             <input readonly="readonly" size="50" value="Unknown" />
-        </div>
+        </div> -->
 
     </div>
-    <div id="stream"></div>
-    <div id="chat"></div>
-    <div id="riot"></div>
+    <div class="streamContainer">
+        <div id="name"></div>
+        <div id="stream"></div>
+        <div id="chat"></div>
+        <div id="browseAll"></div>
+        <button class="button hidden" id="button">Get Stats</button>
+    </div>
+    <script type="text/javascript">
+    var goToStream = function(id) {
+        document.getElementById("browseAll").innerHTML = "";
+        document.getElementById("stream").innerHTML = '<object class="streamPlayer" type="application/x-shockwave-flash" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" id="ember1081-flash-player" style="visibility:visible;"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="wmode" value="opaque"><param name="bgcolor" value="000000"><param name="flashvars" value="id=ember1081-flash-player&hide_chat=&channel=' + (id) + '&embed=0&auto_play=true&device_id=kVk3QHg&eventsCallback=Twitch.player.FlashPlayer2.callbacks.callback0"></object>';
+        document.getElementById("chat").innerHTML = '<iframe frameborder="0"id="chat_embed" src="http://twitch.tv/chat/embed?channel=' + id + '&amp;popout_chat=true" height="500" width="350"></iframe>';
+    }
+    </script>
     <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
 </body>
 
