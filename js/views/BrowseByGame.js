@@ -7,7 +7,7 @@
         tagName: "div",
         className: "game",
         template: "<div>browsebygame</div>",
-        el:"#browseAll",
+        el: "#browseAll",
         initialize: function() {
             document.getElementById("name").innerHTML = "";
             document.getElementById("stream").innerHTML = "";
@@ -42,17 +42,24 @@
 
         },
         render: function() {
-        	console.log(this.uniqueNames)
-            debugger;
-        	var putOnPage = "";
-            for(var i = 0; i<this.uniqueNames.length; i++){
-                if(this.uniqueNames[i]===null){
+            console.log(this.uniqueNames)
+            var putOnPage = "";
+            for (var i = 0; i < this.uniqueNames.length; i++) {
+                if (this.uniqueNames[i] === null) {
                     continue;
                 }
-            	putOnPage += "<a href=#"+this.uniqueNames[i].split(' ').join('')+">"+this.uniqueNames[i]+"</a><br>";
+                putOnPage += "<div class = 'hover goToGame' id='" + this.uniqueNames[i].split(' ').join('') + "'>" + this.uniqueNames[i] + "</div><br>";
             }
             this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
-        	this.$el.append(putOnPage);
+            this.$el.append(putOnPage);
+        },
+        events: {
+            "click .goToGame": "goToGame"
+        },
+        goToGame: function(e) {
+            this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
+            document.getElementById("stream").innerHTML = "";
+            document.getElementById("chat").innerHTML = "";
         }
     })
 
