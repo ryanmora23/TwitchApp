@@ -60,3 +60,6 @@ li {
 
 .hover:hover {
   cursor: pointer; }
+
+.hi {
+  background-image: url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg"); }
