@@ -14,7 +14,6 @@ function app(){
         //views
         {url: "./js/views/AppView.js"},
         {url: "./js/views/StreamView.js"},
-        {url: "./js/views/Login.js"},
         {url: "./js/views/BrowseAll.js"},
         {url: "./js/views/BrowseByGame.js"},
         {url: "./js/views/BrowseByStream.js"},
