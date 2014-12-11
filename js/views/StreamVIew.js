@@ -15,11 +15,12 @@
             document.getElementById("quotes").style.display="";
             var quote = ["'It's Dangerous to go alone! Take this!'<br>-Zelda", "'Thank you Mario, but the princess is in another castle....'<br>-Super Mario", "'Fox, do a barrel roll!'<br>-StarFox", "'Snake? SNAKE?!? SNAAAAAAAAAAAAAAAKE!!!!!!'<br>-Metal Gear Solid", "'HADOUKEN!'<br>-Street Fighter", "'He's on fire!'<br>-Nba Jams","'Finish Him!'<br>-Mortal Kombat", "'Nuclear Launch Detected'<br>-Starcraft:BroodWar"]
             var i = ~~(Math.random() * quote.length);
-            document.getElementById("quotes").innerHTML = "<div>" + quote[i] + "</div><br><button class='quoteButton button' onClick='self.window.app.StreamView.prototype.randomStream()'>Click for Random Stream</button><button class='refresh button'onClick='location.reload()'>Another Quote</button>";
+            document.getElementById("quotes").innerHTML = "<div>" + quote[i] + "</div><br><button class='quoteButton button' onClick='self.window.app.StreamView.prototype.randomStream()'>Click for Random Stream</button><button class='refresh button'onClick='location.reload()'>Another Quote</button><br><iframe class='eightbit' width='560' height='315' src='//www.youtube.com/embed/B31LMRzuXi0?autoplay=1&start=4' frameborder='0' allowfullscreen></iframe>";
         },
         randomStream: function() {
             var self = this;
-            document.getElementById("quotes").style.display="none";
+            document.getElementById("quotes").innerHTML="";
+            document.getElementById("quotes").style.display = "none";
             this.TwitchModel = new app.TwitchModel();
             this.TwitchModel.getStream().then(function(stream) {
                 var ran = Math.random();

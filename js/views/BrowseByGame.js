@@ -49,7 +49,7 @@
                 }
                 putOnPage += "<div class = 'hover goToGame' id='" + this.uniqueNames[i].split(' ').join('') + "'>" + this.uniqueNames[i] + "</div><br>";
             }
-            this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
+            // this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
             this.$el.append(putOnPage);
         },
         events: {

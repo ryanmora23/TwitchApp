@@ -89,9 +89,10 @@ body {
 
 .name {
   position: relative;
-  left: 40%;
+  text-align: center;
   color: darkviolet;
-  padding: 20px; }
+  padding: 20px;
+  width: 100%; }
 
 .previewCont {
   content: "";
@@ -149,8 +150,14 @@ a {
 
 .navContainer a {
   color: #00FFFF;
-  font-family: arial; }
+  font-family: arial;
+  display: inline; }
 
+/*.navContainer ul{
+    display:inline;
+    text-align:left;
+    list-style: none;
+}*/
 /*
     quotes/buttons
  */
@@ -184,3 +191,6 @@ button.quoteButton.button {
   content: "";
   position: relative;
   margin-top: 15%; }
+
+.eightbit {
+  display: none; }

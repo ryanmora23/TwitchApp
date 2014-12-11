@@ -17,7 +17,7 @@
         },
         render: function() {
             var self = this;
-            this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
+            // this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div><br>");
             this.TwitchModel.getStream().then(function(stream) {
                 console.log(stream);
                 for (var i = 0; i < stream.streams.length; i++) {
