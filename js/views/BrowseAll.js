@@ -10,10 +10,9 @@
             this.render();
         },
         render: function() {
-            this.$el.html("<div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div>");
+            this.$el.html("<div class='browseCont'><div class='inline'><a href='#BrowseByGame'>Browse By Game</a></div><div class='inline'><a href='#BrowseByStream'>Browse By Top Streams</a></div></div><br><div class='gamePic'></div>");
             document.getElementById("stream").innerHTML = "";
             document.getElementById("chat").innerHTML = "";
-
         }
     });
     app.BrowseAll = BrowseAll;

@@ -67,8 +67,130 @@ li{
     cursor: pointer;
 }
 /*fonts*/
-div{
+body{
     font-family: 'Press Start 2P', cursive;
-    background-color: #00FFFF;
+    background-color: #BFFFFF;
     color: white;
 }
+/* stream and chat */
+.streamContainer{
+    width:100%;
+    display:inline;
+}
+.streamPlayer{
+    border: 2px black solid;
+}
+.chatCont{
+    border: 2px solid black;
+}
+.stream{
+    width:66%;
+    float:left;
+    margin-left:3px;
+}
+.chat{
+    width:33%;
+    float:right;
+}
+.name{
+    position:relative;
+    left:40%;
+    color:darkviolet;
+    padding:20px;
+}
+.previewCont{
+    content:"";
+    font-size:1em;
+    position:relative;
+    color:darkviolet;
+    width:30%;
+    display:inline-block;
+    padding-left:1.5em;
+    padding-bottom: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+.previewCont img{
+    border:2px solid black;
+    box-shadow: -2px 2px 2px black;
+}
+/*Browse all*/
+.browseAll .browseCont{
+    position:relative;
+    left:3%;
+    max-width: 100%;
+}
+.browseAll{
+    position:relative;
+    color:darkviolet;
+    display:inline-block;
+    width:100%;
+}
+a{
+    color:black;
+}
+.browseAll .inline{
+    height:1000px;
+    font-family: 'Press Start 2p', cursive;
+}
+.browseAll div{
+    max-width: 1200px;
+    font-family: arial;
+    font-style: 12px;
+}
+/*.browseAll .previewCont div{
+    font-family: 'Press Start 2P', cursive;
+}*/
+.browseAll .hover{
+    font-family: 'Press Start 2p', cursive;
+}
+/*
+ * nav bar
+ */
+.navContainer{
+    font-size:14px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    background-color:black;
+}
+.navContainer a{
+    color:#00FFFF;
+    font-family:arial;
+}
+/*
+    quotes/buttons
+ */
+.quotes{
+    transition: 2s ease;
+    font-family:'Press Start 2p', cursive;
+    background-color: black;
+    color:#00FFFF;
+    position:absolute;
+    height:100%;
+    width:100%;
+    text-align: center;
+}
+.quotes div{
+    transition: 2s ease;
+    top:50%;
+    position:relative;
+    content:"";
+}
+.button{
+    content:"";
+    opacity:2;
+    position:relative;
+    margin:2px;
+    opacity: 2;
+    background-color: darkviolet;
+}
+button.quoteButton.button{
+    content : "";
+    position:relative;
+    margin-top:15%;
+}
+
+
+
+
+
+

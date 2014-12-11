@@ -5,35 +5,70 @@
 
     var Router = Backbone.Router.extend({
         routes: {
-            "Login": "Login",
             "BrowseAll": "BrowseAll",
             "BrowseLeague": "BrowseLeague",
             "BrowseByGame": "BrowseByGame",
-            "BrowseByStream":"BrowseByStream",
+            "BrowseByStream": "BrowseByStream",
             "BrowseByGame/:id": "Game",
             "*default": "Home"
         },
         Home: function() {
-            console.log("home"),
-            this.AppView.StreamView.randomStream();
+            var doc = "";
+            this.clearPage();
+            this.AppView.StreamView.render();
+            if (doc == document.URL) {
+                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
+                document.body.style.backgroundSize = '100% 500%'
+            } else {
+                document.body.style.backgroundImage = "";
+                document.body.backgroundSize = "";
+            }
         },
         BrowseAll: function() {
-            console.log("BrowseAll");
             this.BrowseAll = new app.BrowseAll();
+            var doc = document.URL;
+            if (doc == document.URL) {
+                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
+                document.body.style.backgroundSize = '100% 500%'
+            } else {
+                document.body.style.backgroundImage = "";
+                document.body.backgroundSize = "";
+            }
         },
         BrowseLeague: function() {
-            console.log("BrowseLeague");
+            var doc = "";
             this.BrowseLeague = new app.BrowseLeague();
+            if (doc == document.URL) {
+                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
+                document.body.style.backgroundSize = '100% 500%'
+            } else {
+                document.body.style.backgroundImage = "";
+                document.body.backgroundSize = "";
+            }
         },
-        BrowseByGame: function(){
-            console.log("Browse by game");
+        BrowseByGame: function() {
+            var doc = "";
             this.BrowseByGame = new app.BrowseByGame();
+            if (doc == document.URL) {
+                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
+                document.body.style.backgroundSize = '100% 500%'
+            } else {
+                document.body.style.backgroundImage = "";
+                document.body.backgroundSize = "";
+            }
         },
-        BrowseByStream: function(){
-            console.log("Browse by stream");
+        BrowseByStream: function() {
+            var doc = "";
             this.BrowseByStream = new app.BrowseByStream();
+            if (doc == document.URL) {
+                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
+                document.body.style.backgroundSize = '100% 500%'
+            } else {
+                document.body.style.backgroundImage = "";
+                document.body.backgroundSize = "";
+            }
         },
-        Game:function(){
+        Game: function() {
             console.log(id);
         },
         initialize: function() {
@@ -41,6 +76,11 @@
             this.AppView = new app.AppView();
 
             Backbone.history.start();
+        },
+        clearPage: function() {
+            document.getElementById("browseAll").innerHTML = "";
+            document.getElementById("stream").innerHTML = "";
+            document.getElementById("chat").innerHTML = "";
         }
     });
 

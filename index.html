@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./bower_components/normalize.css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./bower_components/typeplate-starter-kit/css/typeplate.css">
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./dist/style2.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="https://rawgit.com/justintv/twitch-js-sdk/master/twitch.js"></script>
 
@@ -15,6 +17,7 @@
 </head>
 
 <body>
+    <div class="quotes" id="quotes"></div>
     <div>
         <div class="navContainer">
             <ul class="navBar">
@@ -31,12 +34,11 @@
         </div>
     </div>
     <div class="streamContainer">
-        <div id="name"></div>
-        <div id="stream"></div>
-        <div id="chat"></div>
-        <div class="browseAll" id="browseAll"></div>
-        <button class="button hidden" id="button">Get Stats</button>
+        <div id="name" class="name"></div>
+        <div id="stream" class="stream"></div>
+        <div id="chat" class="chat"></div>
     </div>
+    <div class="browseAll" id="browseAll"></div>
     <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
 </body>
 

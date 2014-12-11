@@ -22,7 +22,7 @@
             this.$el.html("");
             this.TwitchModel.getStream().then(function(stream) {
                 for (var i = 0; i < stream.streams.length; i++) {
-                    self.$el.append("<div>" + stream.streams[i].channel.name + " - " + stream.streams[i].viewers + " viewers</div><img class = 'goToStream hover' id = '" + stream.streams[i].channel.name + "' class = 'hover' src=" + stream.streams[i].preview.medium + " class='margin'>");
+                    self.$el.append("<div class='previewCont'><div class='name2'>" + stream.streams[i].channel.name + " - " + stream.streams[i].viewers + " viewers</div><img class = 'goToStream hover' id = '" + stream.streams[i].channel.name + "' class = 'hover' src=" + stream.streams[i].preview.medium + " class='margin'></div>");
                 }
 
             })
@@ -43,6 +43,12 @@
                 target2 = "crsstvicious";
             } else if (target == "trick2g") {
                 target2 = "kingtrick"
+            } else if (target == "tsm_theoddone") {
+                target2 = "theoddone";
+            }else if (target == "clgdoublelift"){
+                target2 = "doublelift";
+            }else if (target == "curse_piglet"){
+                target2 = "crspiglet";
             }
             $.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + target2 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(riot) {
                 riotRef = riot;
@@ -54,6 +60,7 @@
                     console.log(match.matches);
                     console.log(riotRef[target2].id);
                     self.$el.html("");
+                    document.getElementById("browseAll").innerHTML += "<div>Match History</div>";
                     for (var i = 0; i < match.matches.length; i++) {
                         var obj = JSON.stringify(match.matches[i].participants[0].stats);
                         document.getElementById("browseAll").innerHTML += "<div id = 'game" + i + "' class= '" + match.matches[i].participants[0].championId + "'>" + "time: " + match.matches[i].matchDuration + "<br>" + obj + "<br>" + "champ ID: " + match.matches[i].participants[0].championId + "<br>" + "</div>";
@@ -70,7 +77,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game0").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -82,7 +89,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game1").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -94,7 +101,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game2").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -106,7 +113,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game3").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -118,7 +125,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game4").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -130,7 +137,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game5").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -142,7 +149,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game6").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -154,7 +161,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game7").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -166,7 +173,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game8").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -178,7 +185,7 @@
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 }
-                if(url.name.indexOf(" ") != -1){
+                if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
                 document.getElementById("game9").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
