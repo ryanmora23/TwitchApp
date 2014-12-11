@@ -80,6 +80,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game0").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num1 = document.getElementById("game1").className;
@@ -92,6 +93,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game1").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num2 = document.getElementById("game2").className;
@@ -104,6 +106,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game2").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num3 = document.getElementById("game3").className;
@@ -116,6 +119,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game3").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num4 = document.getElementById("game4").className;
@@ -128,6 +132,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game4").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num5 = document.getElementById("game5").className;
@@ -140,6 +145,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game5").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num6 = document.getElementById("game6").className;
@@ -152,6 +158,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game6").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num7 = document.getElementById("game7").className;
@@ -164,6 +171,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game7").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num8 = document.getElementById("game8").className;
@@ -176,6 +184,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game8").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
             var num9 = document.getElementById("game9").className;
@@ -188,6 +197,7 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
+                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
                 document.getElementById("game9").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
             })
         }

@@ -13,60 +13,24 @@
             "*default": "Home"
         },
         Home: function() {
-            var doc = "";
             this.clearPage();
             this.AppView.StreamView.render();
-            if (doc == document.URL) {
-                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
-                document.body.style.backgroundSize = '100% 500%'
-            } else {
-                document.body.style.backgroundImage = "";
-                document.body.backgroundSize = "";
-            }
         },
         BrowseAll: function() {
+            document.getElementById("quotes").style.display = "none";
             this.BrowseAll = new app.BrowseAll();
-            var doc = document.URL;
-            if (doc == document.URL) {
-                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
-                document.body.style.backgroundSize = '100% 500%'
-            } else {
-                document.body.style.backgroundImage = "";
-                document.body.backgroundSize = "";
-            }
         },
         BrowseLeague: function() {
-            var doc = "";
+            document.getElementById("quotes").style.display = "none";
             this.BrowseLeague = new app.BrowseLeague();
-            if (doc == document.URL) {
-                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
-                document.body.style.backgroundSize = '100% 500%'
-            } else {
-                document.body.style.backgroundImage = "";
-                document.body.backgroundSize = "";
-            }
         },
         BrowseByGame: function() {
-            var doc = "";
+            document.getElementById("quotes").style.display = "none";
             this.BrowseByGame = new app.BrowseByGame();
-            if (doc == document.URL) {
-                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
-                document.body.style.backgroundSize = '100% 500%'
-            } else {
-                document.body.style.backgroundImage = "";
-                document.body.backgroundSize = "";
-            }
         },
         BrowseByStream: function() {
-            var doc = "";
+            document.getElementById("quotes").style.display = "none";
             this.BrowseByStream = new app.BrowseByStream();
-            if (doc == document.URL) {
-                document.body.style.backgroundImage = 'url("http://i.imgur.com/XGBgv.png")'
-                document.body.style.backgroundSize = '100% 500%'
-            } else {
-                document.body.style.backgroundImage = "";
-                document.body.backgroundSize = "";
-            }
         },
         Game: function() {
             console.log(id);

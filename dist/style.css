@@ -91,7 +91,8 @@ body {
   position: relative;
   left: 40%;
   color: darkviolet;
-  padding: 20px; }
+  padding: 20px;
+  width: 60%; }
 
 .previewCont {
   content: "";
