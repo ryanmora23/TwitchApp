@@ -13,7 +13,7 @@ function app(){
         {url: "./js/models/TwitchModel.js"},
         //views
         {url: "./js/views/AppView.js"},
-        {url: "./js/views/StreamView.js"},
+        {url: "./js/views/Stream.js"},
         {url: "./js/views/BrowseAll.js"},
         {url: "./js/views/BrowseByGame.js"},
         {url: "./js/views/BrowseByStream.js"},

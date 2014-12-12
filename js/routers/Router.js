@@ -14,7 +14,7 @@
         },
         Home: function() {
             this.clearPage();
-            this.AppView.StreamView.render();
+            this.AppView.Stream.render();
         },
         BrowseAll: function() {
             document.getElementById("quotes").style.display = "none";

@@ -3,7 +3,7 @@
     "use strict";
     window.app = window.app || {};
 
-    var StreamView = Backbone.View.extend({
+    var Stream = Backbone.View.extend({
         tagName: "div",
         className: "stream",
         template: "<div>stream view</div>",
@@ -15,7 +15,7 @@
             document.getElementById("quotes").style.display="";
             var quote = ["'It's Dangerous to go alone! Take this!'<br>-Zelda", "'Thank you Mario, but the princess is in another castle....'<br>-Super Mario", "'Fox, do a barrel roll!'<br>-StarFox", "'Snake? SNAKE?!? SNAAAAAAAAAAAAAAAKE!!!!!!'<br>-Metal Gear Solid", "'HADOUKEN!'<br>-Street Fighter", "'He's on fire!'<br>-Nba Jams","'Finish Him!'<br>-Mortal Kombat", "'Nuclear Launch Detected'<br>-Starcraft:BroodWar"]
             var i = ~~(Math.random() * quote.length);
-            document.getElementById("quotes").innerHTML = "<div>" + quote[i] + "</div><br><button class='quoteButton button' onClick='self.window.app.StreamView.prototype.randomStream()'>Click for Random Stream</button><button class='refresh button'onClick='location.reload()'>Another Quote</button><br><iframe class='eightbit' width='560' height='315' src='//www.youtube.com/embed/B31LMRzuXi0?autoplay=1&start=4' frameborder='0' allowfullscreen></iframe>";
+            document.getElementById("quotes").innerHTML = "<div>" + quote[i] + "</div><br><button class='quoteButton button' onClick='self.window.app.Stream.prototype.randomStream()'>Click for Random Stream</button><button class='refresh button'onClick='location.reload()'>Another Quote</button><br><iframe class='eightbit' width='560' height='315' src='//www.youtube.com/embed/B31LMRzuXi0?autoplay=1&start=4' frameborder='0' allowfullscreen></iframe>";
         },
         randomStream: function() {
             var self = this;
@@ -35,5 +35,5 @@
     })
 
 
-    app.StreamView = StreamView;
+    app.Stream = Stream;
 })(window, undefined);

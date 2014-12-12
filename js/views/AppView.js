@@ -8,7 +8,7 @@
             this.render();
         },
         render: function() {
-            this.StreamView = new app.StreamView();
+            this.Stream = new app.Stream();
         }
     });
     // var goToStream = function(id) {
