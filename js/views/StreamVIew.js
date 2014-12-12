@@ -34,5 +34,6 @@
         }
     })
 
+
     app.StreamView = StreamView;
 })(window, undefined);
