@@ -169,7 +169,7 @@ a{
     quotes/buttons
  */
 .quotes{
-    transition: 2s ease;
+    transition: 2s linear;
     font-family:'Press Start 2p', cursive;
     background-color: black;
     color:#00FFFF;
@@ -179,7 +179,7 @@ a{
     text-align: center;
 }
 .quotes div{
-    transition: 2s ease;
+    transition: 2s linear;
     top:50%;
     position:relative;
     content:"";
@@ -204,7 +204,7 @@ button.quoteButton.button{
     text-align: center;
 }
 .goToGame:hover{
-    transition:2s ease;
+    transition:1s linear;
     color:black;
     font-size:larger;
 }
@@ -233,10 +233,34 @@ button.quoteButton.button{
 /*
     match history
  */
-.matchHistory{
+div.matchHistory{
     text-align: center;
-    font-size:larger;
+    font-size:30px;
+    font-family: 'Press Start 2p', cursive;
+    margin: 20px;
 }
-
+.matches{
+    position:relative;
+    height:500px;
+    width:100%;
+    color:whitesmoke;
+}
+.matches *{
+    position:relative;
+    height:100%;
+    width:100%;
+    left:.5%;
+}
+.statistics{
+    position:relative;
+    display:inline-table;
+    height: 0;
+    max-width: 27%;
+    color:whitesmoke;
+    margin-top: 20px;
+}
+.statistics.three{
+    left:-10%;
+}
 
 

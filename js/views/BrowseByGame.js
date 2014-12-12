@@ -9,7 +9,7 @@
         template: "<div>browsebygame</div>",
         el: "#browseAll",
         initialize: function() {
-            this.$el.html("");
+            this.$el.html('<audio autoplay id="audio"><source src="http://themushroomkingdom.net/sounds/wav/smb/smb_powerup.wav"></audio>');
             document.getElementById("name").innerHTML = "";
             document.getElementById("stream").innerHTML = "";
             document.getElementById("chat").innerHTML = "";
@@ -60,7 +60,7 @@
         goToGame: function(e) {
             this.$el.html("");
             var target = $(e.currentTarget);
-            console.log(target[0].innerHTML);
+            console.log(target[0].innerHTML, target);
             document.getElementById("name").innerHTML = "";
             this.TwitchModel = new app.TwitchModel({
                 limit: "100",
