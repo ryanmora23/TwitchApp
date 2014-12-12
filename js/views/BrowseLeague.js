@@ -45,10 +45,12 @@
                 target2 = "kingtrick"
             } else if (target == "tsm_theoddone") {
                 target2 = "theoddone";
-            }else if (target == "clgdoublelift"){
+            } else if (target == "clgdoublelift") {
                 target2 = "doublelift";
-            }else if (target == "curse_piglet"){
+            } else if (target == "curse_piglet") {
                 target2 = "crspiglet";
+            } else if (target == "tsm_dyrus") {
+                target2 = "dyrus";
             }
             $.get("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/" + target2 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(riot) {
                 riotRef = riot;
@@ -60,10 +62,10 @@
                     console.log(match.matches);
                     console.log(riotRef[target2].id);
                     self.$el.html("");
-                    document.getElementById("browseAll").innerHTML += "<div>Match History</div>";
+                    document.getElementById("browseAll").innerHTML += "<div class='matchHistory'>Match History</div>";
                     for (var i = 0; i < match.matches.length; i++) {
                         var obj = JSON.stringify(match.matches[i].participants[0].stats);
-                        document.getElementById("browseAll").innerHTML += "<div id = 'game" + i + "' class= '" + match.matches[i].participants[0].championId + "'>" + "time: " + match.matches[i].matchDuration + "<br>" + obj + "<br>" + "champ ID: " + match.matches[i].participants[0].championId + "<br>" + "</div>";
+                        document.getElementById("browseAll").innerHTML += "<div id = 'game" + i + "' class= '" + match.matches[i].participants[0].championId + "'>" + "time: " + match.matches[i].matchDuration + "<br>" + obj + "</div>";
                     }
                     self.champImage();
                 })
@@ -73,6 +75,7 @@
             var num = document.getElementById("game0").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game0").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -80,12 +83,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game0").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num1 = document.getElementById("game1").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num1 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game1").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -93,12 +103,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game1").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num2 = document.getElementById("game2").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num2 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game2").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -106,12 +123,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game2").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num3 = document.getElementById("game3").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num3 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game3").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -119,12 +143,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game3").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num4 = document.getElementById("game4").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num4 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game4").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -132,12 +163,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game4").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num5 = document.getElementById("game5").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num5 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game5").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -145,12 +183,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game5").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num6 = document.getElementById("game6").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num6 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game6").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -158,12 +203,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game6").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num7 = document.getElementById("game7").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num7 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game7").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -171,12 +223,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game7").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num8 = document.getElementById("game8").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num8 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game8").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -184,12 +243,19 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game8").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
             var num9 = document.getElementById("game9").className;
             $.get("https://na.api.pvp.net/api/lol/static-data/na/v1.2/champion/" + num9 + "?api_key=12f0278a-f805-4892-9cd3-1e37634d523c").then(function(url) {
                 console.log("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + url.name + "_0.jpg");
+                document.getElementById("game9").innerHTML += "Champion: " + url.name;
                 if (url.name.indexOf("'") != -1) {
                     url.name = url.name.replace("'", "");
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
@@ -197,8 +263,14 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                if (url.name != "XinZhao") {
+                    url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if (url.name == "Reksai") {
+                    url.name = "RekSai";
+                }
                 document.getElementById("game9").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
+
             })
         }
 

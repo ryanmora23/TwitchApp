@@ -9,6 +9,7 @@
         template: "<div>browsebygame</div>",
         el: "#browseAll",
         initialize: function() {
+            this.$el.html("");
             document.getElementById("name").innerHTML = "";
             document.getElementById("stream").innerHTML = "";
             document.getElementById("chat").innerHTML = "";
@@ -77,7 +78,7 @@
             this.$el.html("");
             this.TwitchModel.getStream().then(function(stream) {
                 for (var i = 0; i < stream.streams.length; i++) {
-                    self.$el.append("<div>" + stream.streams[i].channel.name + " - " + stream.streams[i].viewers + " viewers</div><img class = 'goToStream hover' id = '" + stream.streams[i].channel.name + "' class = 'hover' src=" + stream.streams[i].preview.large + " class='margin'>");
+                    self.$el.append("<div class='streamCont'><div>" + stream.streams[i].channel.name + " - " + stream.streams[i].viewers + " viewers</div><img class = 'goToStream hover' id = '" + stream.streams[i].channel.name + "' class = 'hover' src=" + stream.streams[i].preview.medium + " class='margin'></div>");
                 }
 
             })

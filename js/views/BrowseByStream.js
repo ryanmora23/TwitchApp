@@ -10,6 +10,9 @@
         el: "#browseAll",
         initialize: function() {
             document.getElementById("name").innerHTML = "";
+            this.$el.html("");
+            document.getElementById("stream").innerHTML = "";
+            document.getElementById("chat").innerHTML = "";
             this.TwitchModel = new app.TwitchModel({
                 limit: "100"
             });
@@ -21,7 +24,7 @@
             this.TwitchModel.getStream().then(function(stream) {
                 console.log(stream);
                 for (var i = 0; i < stream.streams.length; i++) {
-                    self.$el.append("<div>" + stream.streams[i].channel.name + " - " + stream.streams[i].game + " - " + stream.streams[i].viewers + " viewers</div><img id = '" + stream.streams[i].channel.name + "'src='" + stream.streams[i].preview.medium + "' class='goToStream margin hover' >");
+                    self.$el.append("<div class='streamCont'><div>" + stream.streams[i].channel.name + " - " + stream.streams[i].game + " - " + stream.streams[i].viewers + " viewers</div><img id = '" + stream.streams[i].channel.name + "'src='" + stream.streams[i].preview.medium + "' class='goToStream margin hover' ></div>");
                 }
 
             })

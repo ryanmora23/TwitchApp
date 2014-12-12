@@ -109,6 +109,12 @@ body {
   border: 2px solid black;
   box-shadow: -2px 2px 2px black; }
 
+.previewCont img:hover {
+  -webkit-transition: 2.5s ease;
+          transition: 2.5s ease;
+  border: 4px solid black;
+  box-shadow: -4px 4px 4px black; }
+
 /*Browse all*/
 .browseAll .browseCont {
   position: relative;
@@ -133,9 +139,6 @@ a {
   font-family: arial;
   font-style: 12px; }
 
-/*.browseAll .previewCont div{
-    font-family: 'Press Start 2P', cursive;
-}*/
 .browseAll .hover {
   font-family: 'Press Start 2p', cursive; }
 
@@ -160,8 +163,6 @@ a {
 }*/
 /*
     quotes/buttons
- *
- *
  */
 .quotes {
   -webkit-transition: 2s ease;
@@ -196,3 +197,43 @@ button.quoteButton.button {
 
 .eightbit {
   display: none; }
+
+.goToGame {
+  text-align: center; }
+
+.goToGame:hover {
+  -webkit-transition: 2s ease;
+          transition: 2s ease;
+  color: black;
+  font-size: larger; }
+
+/*
+    browse by stream
+ */
+.streamCont {
+  content: "";
+  font-size: 1em;
+  position: relative;
+  color: darkviolet;
+  width: 30%;
+  display: inline-block;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  font-family: 'Open Sans', sans-serif; }
+
+.streamCont img {
+  border: 2px solid black;
+  box-shadow: -2px 2px 2px black; }
+
+.streamCont img:hover {
+  -webkit-transition: 2.5s ease;
+          transition: 2.5s ease;
+  border: 4px solid black;
+  box-shadow: -4px 4px 4px black; }
+
+/*
+    match history
+ */
+.matchHistory {
+  text-align: center;
+  font-size: larger; }
