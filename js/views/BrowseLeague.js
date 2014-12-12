@@ -99,8 +99,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game0").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -119,8 +122,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game1").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -139,8 +145,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game2").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -159,8 +168,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game3").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -179,8 +191,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game4").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -199,8 +214,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game5").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -219,8 +237,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game6").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -239,8 +260,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game7").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
@@ -259,8 +283,11 @@
                 if (url.name.indexOf(" ") != -1) {
                     url.name = url.name.replace(" ", "");
                 }
-                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi") {
+                if (url.name != "XinZhao" && url.name != "RekSai" && url.name != "LeeSin" && url.name != "TwistedFate" && url.name != "MissFortune" && url.name != "KogMaw" && url.name !="MasterYi" && url.name != "FiddleSticks") {
                     url.name = url.name.charAt(0) + url.name.slice(1).toLowerCase();
+                }
+                if(url.name == "Fiddlesticks"){
+                    url.name = "FiddleSticks";
                 }
 
                 document.getElementById("game8").style.backgroundImage = 'url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/' + url.name + '_0.jpg")';
